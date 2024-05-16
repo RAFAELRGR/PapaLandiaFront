@@ -43,6 +43,7 @@ function Login() {
               placeholder="Ingresa tu contraseña"
             />
             <button
+              type="button"
               onClick={ChangeButton}
               id="togglePassword"
               className="absolute inset-y-0 right-0 flex items-center px-2"

@@ -17,7 +17,7 @@ p {
   font-size: 250%;
 }
 
-img {
+.AboutImg {
   height: 50vh;
   width: 100%;
   object-fit: cover;

@@ -1,0 +1,25 @@
+.card {
+  height: calc(20% - 20px);
+  width: calc(20% - 20px);
+  align-items: center;
+  display: flex;
+  margin: 20px; /* Incrementa el margen entre las tarjetas */
+}
+.card-img-top {
+  height: 180px;
+  width: 180px;
+}
+
+.card-title {
+  font-size: 200%;
+}
+
+.card-text {
+  color: black;
+  font-size: 100%;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -5,7 +5,7 @@ function About() {
     <div>
       <NarBar></NarBar>
       <div>
-        <img src="/About.jpg" alt="" />
+        <img className="AboutImg" src="/About.jpg" alt="" />
       </div>
       <div className="Color bg-green-800 text-white p-6 max-w-4xl mx-auto rounded-lg shadow-lg">
         <h2 className="text-lg font-bold mb-4">ACERCA DE</h2>
