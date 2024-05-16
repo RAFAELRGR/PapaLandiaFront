@@ -3,7 +3,7 @@ function Carts() {
   return (
     <div className="cart-container">
       <div className="card">
-        <img src="/Papas.png" className="card-img-top" alt="..." />
+        <img src="/Preparacion.png" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">Preparación del Terreno</h5>
           <p className="card-text">
@@ -18,7 +18,7 @@ function Carts() {
       </div>
       <br />
       <div className="card">
-        <img src="/Papas.png" className="card-img-top" alt="..." />
+        <img src="/sembrar.png" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">Proceso de Siembra</h5>
           <p className="card-text">
@@ -31,7 +31,7 @@ function Carts() {
       </div>
       <br />
       <div className="card">
-        <img src="/Papas.png" className="card-img-top" alt="..." />
+        <img src="/Cuidado.jpg" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">Cuidado Cultivo</h5>
           <p className="card-text">
@@ -44,7 +44,7 @@ function Carts() {
       </div>
       <br />
       <div className="card">
-        <img src="/Papas.png" className="card-img-top" alt="..." />
+        <img src="/Riego.jpeg" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">Riego y Fertilizacion</h5>
           <p className="card-text">
@@ -59,7 +59,7 @@ function Carts() {
       </div>
       <br />
       <div className="card">
-        <img src="/Papas.png" className="card-img-top" alt="..." />
+        <img src="/sembrar.png" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">Cosecha y Almacenamiento</h5>
           <p className="card-text">

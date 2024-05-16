@@ -36,15 +36,15 @@ function Carrusel() {
         <div className="carousel-item" data-bs-interval="2000">
           <img src="/Papas.jpeg" className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5>MANEJA TAREAS DE TU CULTIVO</h5>
+            <p>En este lugar podras administrar tus tareas.</p>
           </div>
         </div>
         <div className="carousel-item">
           <img src="/Juego.png" className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>PapaLandia Game</h5>
+            <p>¡Juega nuestro juego ahora mismo!</p>
           </div>
         </div>
       </div>
