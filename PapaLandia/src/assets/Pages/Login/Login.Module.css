@@ -1,0 +1,29 @@
+.Login {
+  background-image: url("/Papas.png") !important;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda horizontalmente */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.Formulario {
+  background-color: #12352b;
+  width: 40%;
+  height: 35%;
+}
+
+.text-left {
+  color: white;
+  margin-right: 1%;
+}
+
+.text-2xl {
+  color: white;
+}
+
+.Boton {
+  background-color: #39fc64;
+}

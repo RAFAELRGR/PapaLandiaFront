@@ -1,0 +1,31 @@
+.carousel-item {
+  /* height: 71vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.carousel {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  place-items: center;
+}
+
+h5 {
+  font-size: 500%;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.Description {
+  color: black;
+}
