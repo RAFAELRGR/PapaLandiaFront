@@ -3,13 +3,15 @@ import "./App.css";
 import Home from "./assets/Pages/Home/Home";
 import Login from "./assets/Pages/Login/Login";
 import About from "./assets/Pages/About/About";
+import Register from "./assets/Pages/Registrer/Registrer";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home></Home>}></Route>
-      <Route path="/Login" element={<Login></Login>}></Route>
-      <Route path="/About" element={<About></About>}></Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   );
 }

@@ -26,6 +26,7 @@ body {
   margin: 0;
   place-items: center;
   text-align: center;
+  background-image: url("/Papas.png");
 }
 
 h1 {

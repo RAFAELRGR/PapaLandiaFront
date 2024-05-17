@@ -1,11 +1,55 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Login.Module.css";
 
 function Login() {
   const [showpassword, setShowpassword] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
   const ChangeButton = () => {
     setShowpassword(!showpassword);
   };
+
+  const handleRegisterClick = () => {
+    navigate("/register");
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setError("");
+
+    const url = `https://www.papalandiagame.somee.com/api/Users/Login?userName=${username}&password=${password}`;
+
+    if (username != null && password != null) {
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        const data = await response.json();
+
+        if (typeof data == "boolean" && data == true) {
+          console.log(data);
+          alert("Login exitoso!");
+          navigate("/"); // Redirige a la ruta de inicio
+        } else {
+          alert("Usuario o contraseña incorrectos");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        setError("Ocurrió un error. Inténtalo de nuevo.");
+      }
+    } else {
+      alert("Rellena los campos requeridos");
+    }
+  };
+
   const rootElement = document.getElementById("root");
 
   if (rootElement) {
@@ -14,22 +58,25 @@ function Login() {
     rootElement.style.width = "100%";
     rootElement.style.height = "100vh";
   }
+
   return (
     <div className="Login w-full lg:w-2/3 flex items-center justify-center bg-white">
       <div className="Formulario w-full max-w-md m-auto rounded-lg border border-zinc-300 shadow-md py-10 px-16">
         <h1 className="text-2xl font-medium text-zinc-800 mt-4 mb-12 text-center">
           BIENVENIDO USUARIO
         </h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="email" className="text-left">
+            <label htmlFor="text" className="text-left">
               E-mail
             </label>
             <input
-              type="email"
+              type="text"
               className="w-full p-2 text-zinc-800 border border-zinc-300 rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4"
-              id="email"
+              id="text"
               placeholder="Ingresa tu e-mail"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div className="relative">
@@ -41,6 +88,8 @@ function Login() {
               className="w-full p-2 text-zinc-800 border border-zinc-300 rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4 pr-10"
               id="password"
               placeholder="Ingresa tu contraseña"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <button
               type="button"
@@ -50,10 +99,6 @@ function Login() {
             >
               <i className="bi bi-eye-fill"></i>
             </button>
-            <br />
-            <a href="#" className="text-sm text-blue-600 hover:underline mb-6">
-              ¿Has olvidado tu contraseña?
-            </a>
           </div>
 
           <button
@@ -62,9 +107,10 @@ function Login() {
           >
             INICIAR SESIÓN
           </button>
+          {error && <div className="error text-red-600 mt-4">{error}</div>}
 
           <div className="text-center mt-6">
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-600" onClick={handleRegisterClick}>
               ¿Todavía no tienes una cuenta? Crear una ahora
             </a>
           </div>

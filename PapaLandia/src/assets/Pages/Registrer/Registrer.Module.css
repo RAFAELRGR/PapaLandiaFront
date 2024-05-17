@@ -1,0 +1,15 @@
+.Register {
+  background-image: url("/Papas.png") !important;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.FormularioRegister {
+  background-color: #12352b;
+  width: 45%;
+  height: 45%;
+}
