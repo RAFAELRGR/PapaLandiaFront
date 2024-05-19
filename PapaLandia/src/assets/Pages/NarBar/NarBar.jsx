@@ -24,7 +24,7 @@ function NarBar() {
             <a className="nav-link" href="/About">
               Acerca De
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/insumos">
               Inventario
             </a>
             <a className="nav-link" href="#">

@@ -1,0 +1,82 @@
+.Insumos {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Insumos h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.Insumos form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Insumos form div {
+  margin-bottom: 15px;
+}
+
+.Insumos form label {
+  font-weight: bold;
+}
+
+.Insumos form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.Insumos form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Insumos form button:hover {
+  background-color: #0056b3;
+}
+
+.Insumos .error {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.green-container {
+  background-color: #d3fcd5; /* Color verde */
+  padding: px; /* Espaciado interno */
+  margin: 50px auto; /* Margen exterior */
+  max-width: 500px; /* Ancho máximo */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.tabla-container {
+  background-color: #ffff; /* Color de fondo verde claro */
+  padding: 20px; /* Añadimos un poco de espacio alrededor de la tabla */
+}
+
+.tabla-insumos {
+  width: 100%;
+  border-collapse: collapse;
+  background-image: url("/FondoTabla.png");
+}
+
+.tabla-insumos th,
+.tabla-insumos td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+
+.FondoInsumos {
+  background-color: #fff;
+}
+
+.barra-navegacion {
+  border-bottom: 2px solid #00ff00; /* Cambia el color según tus preferencias */
+}

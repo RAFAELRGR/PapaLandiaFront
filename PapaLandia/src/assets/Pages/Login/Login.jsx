@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.Module.css";
+import Cookies from "universal-cookie";
+const cookies = new Cookies();
 
 function Login() {
   const [showpassword, setShowpassword] = useState(false);
@@ -36,6 +38,7 @@ function Login() {
 
         if (typeof data == "boolean" && data == true) {
           console.log(data);
+          cookies.set("userloged", true);
           alert("Login exitoso!");
           navigate("/"); // Redirige a la ruta de inicio
         } else {
