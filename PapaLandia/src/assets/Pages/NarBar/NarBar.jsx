@@ -2,7 +2,7 @@ function NarBar() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="https://viejorafa.itch.io/papalandia">
           PapaLandia
         </a>
         <button
@@ -27,13 +27,16 @@ function NarBar() {
             <a className="nav-link" href="/insumos">
               Inventario
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/plagas">
               Plagas
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/papas">
+              Papas
+            </a>
+            <a className="nav-link" href="/logros">
               Logros
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/tareas">
               Tareas
             </a>
           </div>

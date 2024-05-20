@@ -37,6 +37,11 @@ function Insumos() {
     event.preventDefault();
     setError("");
 
+    if (!insumoName || !insumoDescription || !typeSuppliesId) {
+      alert("Todos los campos son obligatorios.");
+      return;
+    }
+
     try {
       if (updateMode) {
         await updateInsumo(

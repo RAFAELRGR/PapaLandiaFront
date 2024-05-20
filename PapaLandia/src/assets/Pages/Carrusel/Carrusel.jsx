@@ -41,11 +41,17 @@ function Carrusel() {
           </div>
         </div>
         <div className="carousel-item">
-          <img src="/Juego.png" className="d-block w-100" alt="..." />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>PapaLandia Game</h5>
-            <p>¡Juega nuestro juego ahora mismo!</p>
-          </div>
+          <a
+            href="https://viejorafa.itch.io/papalandia"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/Juego.png" className="d-block w-100" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>PapaLandia Game</h5>
+              <p>¡Juega nuestro juego ahora mismo!</p>
+            </div>
+          </a>
         </div>
       </div>
       <button
