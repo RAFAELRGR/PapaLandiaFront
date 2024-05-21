@@ -47,68 +47,70 @@ function Logros() {
   };
 
   return (
-    <div className="FondoLogro">
-      <NarBar />
-      <br />
-      <div className="ContenedorLogros">
-        <div className="TituloLogros">
-          <h1>LOGROS</h1>
-        </div>
-        {errorLogros ? (
-          <div className="Error">{errorLogros}</div>
-        ) : (
-          <table className="TablaLogros">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Descripción</th>
-              </tr>
-            </thead>
-            <tbody>
-              {logros.map((logro) => (
-                <tr key={logro.achievementsId}>
-                  <td>{logro.achievementsId}</td>
-                  <td>{logro.achievementsName}</td>
-                  <td>{logro.achievementsDescription}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
+    <div>
+      <NarBar></NarBar>
+      <div className="FondoLogro">
         <br />
-        <div className="TituloLogros">
-          <h1>LOGROS DE JUEGO DESBLOQUEADO</h1>
-        </div>
-        <button className="BotonOrdenar" onClick={sortGamesLogros}>
-          Ordenar por Fecha {sortOrder === "asc" ? "↓" : "↑"}
-        </button>
-        {errorGamesLogros ? (
-          <div className="Error">{errorGamesLogros}</div>
-        ) : (
-          <table className="TablaLogros">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Fecha de Desbloqueo</th>
-                <th>ID de Logro</th>
-                <th>ID de Juego</th>
-              </tr>
-            </thead>
-            <tbody>
-              {gamesLogros.map((gameLogro) => (
-                <tr key={gameLogro.achievementUnlockedId}>
-                  <td>{gameLogro.achievementUnlockedId}</td>
-                  <td>
-                    {new Date(gameLogro.achievementUnlocked).toLocaleString()}
-                  </td>
-                  <td>{gameLogro.achievementId}</td>
-                  <td>{gameLogro.gameId}</td>
+        <div className="ContenedorLogros">
+          <div className="TituloLogros">
+            <h1>LOGROS</h1>
+          </div>
+          {errorLogros ? (
+            <div className="Error">{errorLogros}</div>
+          ) : (
+            <table className="TablaLogros">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Descripción</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
+              </thead>
+              <tbody>
+                {logros.map((logro) => (
+                  <tr key={logro.achievementsId}>
+                    <td>{logro.achievementsId}</td>
+                    <td>{logro.achievementsName}</td>
+                    <td>{logro.achievementsDescription}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+          <br />
+          <div className="TituloLogros">
+            <h1>LOGROS DE JUEGO DESBLOQUEADO</h1>
+          </div>
+          <button className="BotonOrdenar" onClick={sortGamesLogros}>
+            Ordenar por Fecha {sortOrder === "asc" ? "↓" : "↑"}
+          </button>
+          {errorGamesLogros ? (
+            <div className="Error">{errorGamesLogros}</div>
+          ) : (
+            <table className="TablaLogros">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Fecha de Desbloqueo</th>
+                  <th>ID de Logro</th>
+                  <th>ID de Juego</th>
+                </tr>
+              </thead>
+              <tbody>
+                {gamesLogros.map((gameLogro) => (
+                  <tr key={gameLogro.achievementUnlockedId}>
+                    <td>{gameLogro.achievementUnlockedId}</td>
+                    <td>
+                      {new Date(gameLogro.achievementUnlocked).toLocaleString()}
+                    </td>
+                    <td>{gameLogro.achievementId}</td>
+                    <td>{gameLogro.gameId}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          )}
+        </div>
       </div>
     </div>
   );
