@@ -1,0 +1,83 @@
+.Tareas {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Tareas h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.Tareas form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Tareas form div {
+  margin-bottom: 15px;
+}
+
+.Tareas form label {
+  font-weight: bold;
+}
+
+.Tareas form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* Agrega cualquier estilo adicional que desees */
+}
+
+.Tareas form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Tareas form button:hover {
+  background-color: #0056b3;
+}
+
+.Tareas .error {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+.green-container {
+  background-color: #d3fcd5;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.tabla-container {
+  background-color: #ffff;
+  padding: 20px;
+}
+
+.tabla-tareas {
+  width: 100%;
+  border-collapse: collapse;
+  background-image: url("/tareas.png"); /* Cambia la imagen de fondo a "tareas.png" */
+}
+
+.tabla-tareas th,
+.tabla-tareas td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+
+.FondoTareas {
+  background-color: #fff;
+}
+
+.barra-navegacion {
+  border-bottom: 2px solid #00ff00;
+}
