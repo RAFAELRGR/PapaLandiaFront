@@ -63,7 +63,7 @@
 .tabla-tareas {
   width: 100%;
   border-collapse: collapse;
-  background-image: url("/tareas.png");
+  background-image: url("/Tareas.png");
 }
 
 .tabla-tareas th,
