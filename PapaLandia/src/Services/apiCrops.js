@@ -36,7 +36,6 @@ export const createCrop = async (
     throw new Error(errorData.message || "Error al crear el cultivo");
   }
 
-  // Return a simple message or status instead of JSON
   return { message: "Cultivo creado exitosamente!" };
 };
 
@@ -69,7 +68,6 @@ export const updateCrop = async (
     throw new Error(errorData.message || "Error al actualizar el cultivo");
   }
 
-  // Return a simple message or status instead of JSON
   return { message: "Cultivo actualizado exitosamente!" };
 };
 
@@ -82,7 +80,5 @@ export const deleteCrop = async (cropsId) => {
     const errorData = await response.json();
     throw new Error(errorData.message || "Error al eliminar el cultivo");
   }
-
-  // Return a simple message or status instead of JSON
   return { message: "Cultivo eliminado exitosamente!" };
 };

@@ -38,7 +38,6 @@ export const createTask = async (
     throw new Error(errorData.message || "Error al crear la tarea");
   }
 
-  // Return a simple message or status instead of JSON
   return { message: "Tarea creada exitosamente!" };
 };
 
@@ -73,7 +72,6 @@ export const updateTask = async (
     throw new Error(errorData.message || "Error al actualizar la tarea");
   }
 
-  // Return a simple message or status instead of JSON
   return { message: "Tarea actualizada exitosamente!" };
 };
 
@@ -87,6 +85,5 @@ export const deleteTask = async (tasksId) => {
     throw new Error(errorData.message || "Error al eliminar la tarea");
   }
 
-  // Return a simple message or status instead of JSON
   return { message: "Tarea eliminada exitosamente!" };
 };

@@ -27,7 +27,6 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  /* Agrega cualquier estilo adicional que desees */
 }
 
 .Tareas form button {
@@ -64,7 +63,7 @@
 .tabla-tareas {
   width: 100%;
   border-collapse: collapse;
-  background-image: url("/tareas.png"); /* Cambia la imagen de fondo a "tareas.png" */
+  background-image: url("/tareas.png");
 }
 
 .tabla-tareas th,

@@ -5,8 +5,8 @@
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: flex-start; /* Alinea el contenido a la izquierda horizontalmente */
-  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .Formulario {

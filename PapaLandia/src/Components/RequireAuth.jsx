@@ -6,13 +6,13 @@ function RequireAuth() {
   try {
     const userloged = cookies.get("userloged");
     if (userloged) {
-      return <Outlet></Outlet>;
+      return <Outlet />;
     } else {
-      return <Navigate to="/login" replace></Navigate>;
+      return <Navigate to="/login" replace />;
     }
   } catch (error) {
     cookies.set("userloged", false);
-    return <Navigate to="/login" replace></Navigate>;
+    return <Navigate to="/login" replace />;
   }
 }
 

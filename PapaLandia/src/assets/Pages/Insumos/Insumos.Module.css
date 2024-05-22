@@ -48,16 +48,16 @@
 }
 
 .green-container {
-  background-color: #d3fcd5; /* Color verde */
-  padding: px; /* Espaciado interno */
-  margin: 50px auto; /* Margen exterior */
-  max-width: 500px; /* Ancho máximo */
-  border-radius: 10px; /* Borde redondeado */
+  background-color: #d3fcd5;
+  padding: px;
+  margin: 50px auto;
+  max-width: 500px;
+  border-radius: 10px;
 }
 
 .tabla-container {
-  background-color: #ffff; /* Color de fondo verde claro */
-  padding: 20px; /* Añadimos un poco de espacio alrededor de la tabla */
+  background-color: #ffff;
+  padding: 20px;
 }
 
 .tabla-insumos {
@@ -78,5 +78,5 @@
 }
 
 .barra-navegacion {
-  border-bottom: 2px solid #00ff00; /* Cambia el color según tus preferencias */
+  border-bottom: 2px solid #00ff00;
 }

@@ -1,4 +1,13 @@
+import Cookies from "universal-cookie";
+
+import { NavLink } from "react-router-dom";
+const cookies = new Cookies();
 function NarBar() {
+  const handleLogout = () => {
+    cookies.remove("userloged");
+    window.location.href = "/login";
+  };
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
@@ -18,33 +27,50 @@ function NarBar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="/">
+            <NavLink className="nav-link" activeClassName="active" exact to="/">
               Home
-            </a>
-            <a className="nav-link" href="/About">
+            </NavLink>
+            <NavLink className="nav-link" activeClassName="active" to="/About">
               Acerca De
-            </a>
-            <a className="nav-link" href="/insumos">
+            </NavLink>
+            <NavLink
+              className="nav-link"
+              activeClassName="active"
+              to="/insumos"
+            >
               Inventario
-            </a>
-            <a className="nav-link" href="/plagas">
+            </NavLink>
+            <NavLink className="nav-link" activeClassName="active" to="/plagas">
               Plagas
-            </a>
-            <a className="nav-link" href="/papas">
+            </NavLink>
+            <NavLink className="nav-link" activeClassName="active" to="/papas">
               Papas
-            </a>
-            <a className="nav-link" href="/logros">
+            </NavLink>
+            <NavLink className="nav-link" activeClassName="active" to="/logros">
               Logros
-            </a>
-            <a className="nav-link" href="/tareas">
+            </NavLink>
+            <NavLink className="nav-link" activeClassName="active" to="/tareas">
               Tareas
-            </a>
-            <a className="nav-link" href="/parcelas">
+            </NavLink>
+            <NavLink
+              className="nav-link"
+              activeClassName="active"
+              to="/parcelas"
+            >
               Parcelas
-            </a>
-            <a className="nav-link" href="/cultivos">
+            </NavLink>
+            <NavLink
+              className="nav-link"
+              activeClassName="active"
+              to="/cultivos"
+            >
               Cultivos
-            </a>
+            </NavLink>
+          </div>
+          <div className="navbar-nav ms-auto">
+            <button className="nav-link btn btn-danger" onClick={handleLogout}>
+              Cerrar sesión
+            </button>
           </div>
         </div>
       </div>
