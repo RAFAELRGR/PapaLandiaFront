@@ -39,6 +39,12 @@ function NarBar() {
             <a className="nav-link" href="/tareas">
               Tareas
             </a>
+            <a className="nav-link" href="/parcelas">
+              Parcelas
+            </a>
+            <a className="nav-link" href="/cultivos">
+              Cultivos
+            </a>
           </div>
         </div>
       </div>

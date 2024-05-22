@@ -10,6 +10,8 @@ import Pests from "./assets/Pages/Plagas/Plagas";
 import Potatoes from "./assets/Pages/Potatoes/Potatoes";
 import Logros from "./assets/Pages/Logros/Logros";
 import Tareas from "./assets/Pages/Tareas/Tareas";
+import Parcelas from "./assets/Pages/Parcela/Parcela";
+import Cultivos from "./assets/Pages/Cultivo/Cultivo";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/plagas" element={<Pests />} />
         <Route path="/logros" element={<Logros />} />
         <Route path="/tareas" element={<Tareas />} />
+        <Route path="/parcelas" element={<Parcelas />} />
+        <Route path="/cultivos" element={<Cultivos />} />
       </Route>
     </Routes>
   );
